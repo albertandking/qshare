@@ -18,6 +18,7 @@ async fn main() -> anyhow::Result<()> {
     let df = data_source.real_time_data().await?;
     // 3. 打印行情数据
     println!("股指实时行情{:?}", df.data.unwrap());
+    println!("怎么回事啊？");
 
     Ok(())
 }
